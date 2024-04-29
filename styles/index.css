@@ -1,0 +1,48 @@
+/* styles.css */
+body {
+    background-image: url('../assets/arcade.jpg');
+    /* Path to your arcade image */
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    /* Creates 2 columns each 200px wide */
+    grid-gap: 120px;
+    /* Adjusts the spacing between grid items */
+    justify-content: center;
+    /* Centers the grid horizontally */
+    align-items: center;
+    /* Aligns items vertically */
+}
+
+.game-button {
+    background-color: transparent;
+    border: 10px  black;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    font-size: 60px;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    /* Adjust width as needed */
+    height: 400px;
+    /* Adjust height as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Optional: adds a shadow for better visibility */
+}
+
+.game-button:hover {
+    transform: scale(1.1);
+    /* Optional: Button grows when hovered */
+}

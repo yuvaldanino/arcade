@@ -1,0 +1,212 @@
+body{
+    /* Path to your arcade image */
+    background-color: rgb(103, 103, 177);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Creates a 3x3 grid */
+    gap: 10px;
+    /* Space between cells */
+    margin: 20px auto;
+    /* Centering the grid */
+    max-width: 600px;
+    /* Restricting the maximum width of the grid */
+}
+
+.cell {
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+    /* Ensures that cells are square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    /* Set a fixed height for better visual */
+    color: #444;
+    /* Default text color */
+}
+
+.cell.red {
+    color: red;
+}
+
+.cell.blue {
+    color: blue;
+}
+
+.cell:hover {
+    background-color: #b4b4b4;
+    /* Hover effect for cells */
+}
+
+#resultDisplay {
+    font-size: 24px;
+    margin: 20px;
+}
+
+.game-title{
+    font-size: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Ensures the body takes full viewport height and footer sticks at the bottom */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    /* Dark background for the header */
+    color: white;
+    /* Light color for text */
+    padding: 20px 20px;
+    /* Padding around the text */
+    position: absolute;
+    /* Position it absolutely relative to the body */
+    top: 0;
+    left: 0;
+}
+
+.back-button{
+    background-color: rgb(79, 79, 181);
+    border: 10px black;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    font-size: 30px;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    width: 140px;
+    /* Adjust width as needed */
+    height: 80px;
+    /* Adjust height as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Optional: adds a shadow for better visibility */
+}
+
+.back-button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(79, 79, 181);
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    /* Pushes the footer to the bottom */
+    background-color: #333;
+    /* Dark background for the footer */
+    color: white;
+    /* Light color for the text */
+    padding: 1px 1000;
+    /* Padding for the footer */
+}
+
+#difficultySelection {
+    font-size: 25px;
+    /* Increase the font size */
+    margin: 20px;
+    /* Add some margin around the selection for better spacing */
+    padding: 10px;
+    /* Padding inside the container */
+    background-color: #f2f2f2;
+    /* Light background for the container */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Subtle shadow for 3D effect */
+    display: flex;
+    /* Flexbox to align items inline */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    gap: 20px;
+    /* Space between items */
+}
+
+#difficultySelection label {
+    margin-right: 10px;
+    /* Space before the radio buttons */
+    font-weight: bold;
+    /* Make the label bold */
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    /* Enlarge the radio buttons */
+    margin-right: 5px;
+    /* Space to the right of each radio button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+input[type="radio"]+label {
+    cursor: pointer;
+    /* Pointer cursor on hover over the label */
+}
+
+#restartButton{
+    background-color: rgb(79, 79, 181);
+    border: 10px black;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    font-size: 30px;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    /* Adjust width as needed */
+    height: 80px;
+    /* Adjust height as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Optional: adds a shadow for better visibility */
+    position: center;
+}
+
+#restartButton:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+#resultDisplay {
+    font-size: 34px;
+    /* Larger font size for visibility */
+    color: #333;
+    /* Dark text color for contrast */
+    background-color: #e0e0e0;
+    /* Light grey background */
+    padding: 10px 20px;
+    /* Padding around the text */
+    margin: 20px auto;
+    /* Centering and adding space around the container */
+    width: 80%;
+    /* Appropriate width relative to the parent */
+    text-align: center;
+    /* Center the text inside the container */
+    border-radius: 10px;
+    /* Rounded corners for a soft, modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    /* Subtle shadow for depth */
+    transition: background-color 0.3s;
+    /* Smooth transition for any background color change */
+}
