@@ -21,6 +21,7 @@ body {
     grid-auto-rows: 3em;
     gap: .25em;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .key {
@@ -81,6 +82,7 @@ body {
     grid-template-rows: repeat(6, 4em);
     gap: .25em;
     margin-bottom: 1em;
+    margin-top: 2em;
 }
 
 .tile {
@@ -245,11 +247,8 @@ header {
 }
 
 #restart-button{
-    position: absolute;
+    position: static;
         /* Position it absolutely relative to the body */
-    top: 175px;
-    left: 45%;
-
     background-color: rgb(247, 241, 67);
     border: 10px black;
     color: rgb(0, 0, 0);
@@ -265,6 +264,17 @@ header {
     height: 80px;
     /* Adjust height as needed */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.center-container {
+    display: flex;
+    /* Enables Flexbox */
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 50px;
+    /* Takes full viewport height */
 }
 
 #restart-button:hover {

@@ -59,6 +59,8 @@ body{
 .game-title{
     font-size: 100px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: static;
+    margin-top: 500px;
 }
 
 /* Ensures the body takes full viewport height and footer sticks at the bottom */
