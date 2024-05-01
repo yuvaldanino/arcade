@@ -7,6 +7,11 @@ body {
     margin: 0;
     background-color: #2932a8;
 }
+html {
+    transform: scale(0.8);
+    /* Ensures scaling starts from the top left */
+    transform-origin: center;
+}
 
 .dice-game-container {
     text-align: center;

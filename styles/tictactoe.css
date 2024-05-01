@@ -8,6 +8,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+html {
+    transform: scale(0.8);
+    /* Ensures scaling starts from the top left */
+    transform-origin: top ;
+}
 
 .board {
     display: grid;
@@ -110,7 +115,7 @@ header {
 
 footer {
     text-align: center;
-    margin-top: auto;
+    margin-top: 1em;
     /* Pushes the footer to the bottom */
     background-color: #333;
     /* Dark background for the footer */

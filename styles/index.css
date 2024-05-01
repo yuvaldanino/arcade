@@ -1,7 +1,13 @@
 /* styles.css */
+html {
+    transform: scale(0.8);
+    /* Ensures scaling starts from the top left */
+    transform-origin: top;
+}
+
 body {
     background-image: url('../assets/view.jpg');
-    background-color: rgb(107, 107, 151);
+    background-color: rgb(54, 54, 129);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -29,7 +35,7 @@ body {
     /* Padding to ensure the gradient shows nicely */
     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
     /* Soft shadow for depth */
-    margin-top: 20px;
+    margin-top: 5px;
     /* Space around the title */
     animation: shine 5s linear infinite;
     /* Optional: Adds a shining effect */

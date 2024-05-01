@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-family: Arial;
 }
-
+html {
+    transform: scale(0.8);
+    /* Ensures scaling starts from the top left */
+    transform-origin: top;
+}
 body {
     background-color: hsl(240, 1%, 14%);
     display: flex;
