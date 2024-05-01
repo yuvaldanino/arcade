@@ -1,14 +1,64 @@
 /* styles.css */
 body {
-    background-image: url('../assets/arcade.jpg');
+    background-image: url('../assets/view.jpg'); 
     /* Path to your arcade image */
-    background-color: blue;
+    background-color: rgb(107, 107, 151);
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.game-title {
+    font-size: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    /* White color, works well on darker backgrounds */
+    background: -webkit-linear-gradient(45deg, #6D5ACF 30%, #DA4453 90%);
+    /* Gradient effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    /* Center align the title */
+    padding: 20px;
+    /* Padding to ensure the gradient shows nicely */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    /* Soft shadow for depth */
+    margin-top: 20px;
+    /* Space around the title */
+    animation: shine 5s linear infinite;
+    /* Optional: Adds a shining effect */
+    margin-bottom: 500px;
+}
+
+@keyframes shine {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(360deg);
+    }
+
+    100% {
+        filter: hue-rotate(0deg);
+    }
+}
+
+header {
+    /* Dark background for the header */
+    color: white;
+    /* Light color for text */
+    padding: 20px 20px;
+    /* Padding around the text */
+    position: absolute;
+    /* Position it absolutely relative to the body */
+    top: 0;
+    left: center;
+    
 }
 
 .button-container {
@@ -21,14 +71,15 @@ body {
     /* Centers the grid horizontally */
     align-items: center;
     /* Aligns items vertically */
+    margin-top: 150px;
 }
 
 .game-button {
     background-color: transparent;
-    border: 10px  black;
+    border: 10px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     font-weight: 1000;
-    font-size: 60px;
+    font-size: 80px;
     padding: 15px 10px;
     cursor: pointer;
     border-radius: 10px;
@@ -40,9 +91,12 @@ body {
     /* Adjust height as needed */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     /* Optional: adds a shadow for better visibility */
+    
 }
 
 .game-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     /* Optional: Button grows when hovered */
+    color: rgb(167, 255, 137);
+    border: 10px solid rgb(167, 255, 137);
 }
