@@ -1,13 +1,15 @@
 /* styles.css */
 body {
-    background-image: url('../assets/view.jpg'); 
-    /* Path to your arcade image */
+    background-image: url('../assets/view.jpg');
     background-color: rgb(107, 107, 151);
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* Align children vertically */
+    justify-content: flex-start;
+    /* Align content from the top */
     align-items: center;
 }
 
@@ -31,7 +33,7 @@ body {
     /* Space around the title */
     animation: shine 5s linear infinite;
     /* Optional: Adds a shining effect */
-    margin-bottom: 500px;
+    margin-bottom: 100px;
 }
 
 @keyframes shine {
@@ -49,29 +51,22 @@ body {
 }
 
 header {
-    /* Dark background for the header */
     color: white;
-    /* Light color for text */
     padding: 20px 20px;
-    /* Padding around the text */
-    position: absolute;
-    /* Position it absolutely relative to the body */
-    top: 0;
-    left: center;
-    
+    width: 100%;
+    /* Ensures it spans the full width of the viewport */
+    text-align: center;
+    /* Center the text if needed */
 }
 
 .button-container {
     display: grid;
     grid-template-columns: repeat(2, 400px);
-    /* Creates 2 columns each 200px wide */
     grid-gap: 120px;
-    /* Adjusts the spacing between grid items */
     justify-content: center;
-    /* Centers the grid horizontally */
     align-items: center;
-    /* Aligns items vertically */
-    margin-top: 150px;
+    margin-top: 100px;
+    /* Ensure it's not too close to the title */
 }
 
 .game-button {
