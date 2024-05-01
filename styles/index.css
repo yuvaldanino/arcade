@@ -33,7 +33,7 @@ body {
     /* Space around the title */
     animation: shine 5s linear infinite;
     /* Optional: Adds a shining effect */
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 @keyframes shine {
@@ -65,7 +65,7 @@ header {
     grid-gap: 120px;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 10px;
     /* Ensure it's not too close to the title */
 }
 
