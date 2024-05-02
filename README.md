@@ -1,6 +1,6 @@
- ## Yuvals Arcade 
+ # Yuvals Arcade 
 
-- # Arcade with 4 games
+- ## Arcade with 4 games
 
 - tic tac toe
   -   easy to make
